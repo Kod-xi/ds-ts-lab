@@ -39,4 +39,3 @@ function generateEventPass(colleague: Colleague): EventPass {
   };
 }
 console.log(generateEventPass(colleagues.current[0]));
-
