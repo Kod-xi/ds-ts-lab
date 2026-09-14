@@ -9,7 +9,7 @@ console.log(findMatch<Friend>(friends, (f) => f.name.startsWith('Jane')  ))
 console.log(findMatch<Colleague>(colleagues.current, (c) => c.department === 'Finance'  ))
 
 function sort<T>(data: T[], criteria: (d1: T, d2: T) => number): T[] | undefined {
-  return data.sort(criteria);
+  return data.slice().sort(criteria);
 }
 
 // Sort friends by age
